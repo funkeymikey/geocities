@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>Mike's Java Enhanced Page!</title>
+<meta NAME="description"
+CONTENT="a personal website about me(Mike Kozelsky); i have some java usage; its not a very interesting site but, there is a picture of my cat belle on it">
+<meta NAME="keywords"
+CONTENT="Belle, Keely, Mike Kozelsky, kozelsky@frontiernet.net, java, personal">
+<style>
+ A:hover { color: red; }
+       A       { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: color: #FF0000; }
+</style>
+<style>
+.Norm { text-align: center; width: 250;	cursor: hand; font-family: verdana; font-size: 18; font-weight: normal; background-color: #4682B4; color: #000000;}
+.Over {	width: 250; text-align: center; cursor: hand; font-family: verdana; font-size: 18; font-weight: normal; background-color: #4682B4; color: #FFFFFF;}
+.Head { position: absolute; width: 400;	font-family: verdana; font-size: 32; font-weight: bold; font-style: italic; color: #ff0000; visibility: hidden}
+</style>
+</head>
+<bgsound="seinfield.mid" loop="1">
+
+<body bgcolor="#000000" TEXT="#FF0000" LINK="#0000FF" VLINK="#C0C0C0"
+onload="Animate(myheading)">
+<script>
+var lnum = 800;
+var movenum = 40;
+
+function Highlight(Object) {
+  Object.className = "Over" }
+
+function Normal(Object) {
+  Object.className = "Norm" }
+
+function Animate(Object) {
+  Object.style.visibility = "visible";
+  Object.style.fontStyle = "italic";
+  if (lnum > 30) {
+	lnum = lnum - movenum;
+	Object.style.pixelLeft = lnum;
+	window.setTimeout("Animate("+Object.id+")",1);}
+  else {
+	Object.style.pixelLeft = 13;
+	Object.style.fontStyle = "normal";}
+}
+  
+</script>
+<div id="myheading" class="Head">
+
+<p>Welcome to Mike's page! </p>
+</div>
+
+<p><br>
+<br>
+<br>
+<script LANGUAGE="JavaScript">
+
+
+  /*  Fade Script v0.1 by Kouichirou@Eto.com 1996
+ 
+  * Copyright (c) 1996 Kouichirou Eto. All Rights Reserved.
+  * You can freely copy, use, modify this script,
+  * if the credit is given in the source.
+  * If you would like to get information for this script,
+  * please access <http://eto.com/JavaScript/>
+ 
+  */
+ function makearray(n) {
+     this.length = n;
+     for(var i = 1; i <= n; i++)
+         this[i] = 0;
+     return this;
+ }
+ hexa = new makearray(16);
+ for(var i = 0; i < 10; i++)
+     hexa[i] = i;
+ hexa[10]="a"; hexa[11]="b"; hexa[12]="c";
+ hexa[13]="d"; hexa[14]="e"; hexa[15]="f";
+ function hex(i) {
+     if (i < 0)
+         return "00";
+     else if (255 < i)
+         return "ff";
+     else
+         return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+ }
+ function setbgColor(r, g, b) {
+     var hr = hex(r); var hg = hex(g); var hb = hex(b);
+     document.bgColor = "#"+hr+hg+hb;
+ }
+ function fade(sr, sg, sb, er, eg, eb, step) {
+     for(var i = 0; i <= step; i++) {
+         setbgColor(
+         Math.floor(sr * ((step-i)/step) + er * (i/step)),
+         Math.floor(sg * ((step-i)/step) + eg * (i/step)),
+         Math.floor(sb * ((step-i)/step) + eb * (i/step)));
+     }
+ }
+ /* Usage:
+  *   fade(inr,ing,inb, outr,outg,outb, step);
+  * example.
+  *   fade(0,0,0, 255,255,255, 255);
+  * fade from black to white with very slow speed.
+  *   fade(255,0,0, 0,0,255, 50);
+  *   fade(0xff,0x00,0x00, 0x00,0x00,0xff, 50); // same as above
+  * fade from red to blue with fast speed.
+  * step 2 is very fast and step 255 is very slow.
+  */
+ function fadein() {
+     fade(255,255,255, 0,0,0, 200);
+ }
+ function fadeout() {
+     /*fade(0,0,0, 255,255,255, 64); */
+ }
+ /* do fadein */
+ fadein();
+ /***** end fade script *****/
+
+</script> <script language="javascript"><!-- hide from other browsers
+document.write("<font size=+3><center>Hi,  ");
+document.write(prompt ("Come check out Mike's page!","Your name here!")); 
+document.write("! </center></font>")
+// STOP HIDING FROM OTHER BROWSERS -->
+</script></p>
+
+<p align="center"><img SRC="3dsphere.gif" HEIGHT="70" WIDTH="70" Alt="none" ALIGN="LEFT"><img
+SRC="3dsphere.gif" HEIGHT="70" WIDTH="70" Alt="none" ALIGN="RIGHT"><img SRC="welcome.gif"
+HEIGHT="97" WIDTH="285" Alt="none"> <br>
+</p>
+
+<h1 align="center">Welcome to my page!!</h1>
+
+<p align="center"><br>
+</p>
+
+<p align="center"><img src="drippingbar.gif" width="532" height="24" ALT="none"></p>
+<!--HEAD2-->
+
+<h2 align="center">icq # 9059835</h2>
+
+<h3 align="center">page me on icq</h3>
+<a href="mailto:9059835@pager.mirabilis.com">
+
+<h4 align="center">here</h4>
+</a>
+
+<p align="center"><br>
+<!--BODY-->Hello my name is Mike!<br>
+well, i guess i can say now that i do have a little experience with web pages now so i
+know it will work. the only thing is that i just wanted everybody to know that i did all
+this purely from html and not knowing a thing when i started, to helping my friend do his
+webpage and setting up the page and teaching him the basics of html.<br>
+Also this page is under construction (i think it will be forever) </p>
+
+<p align="center">FYI:<br>
+i have never believed it when people say &quot;better viewed on netscape 2.0+&quot; or
+&quot;better viewed with msie3.0+&quot; until now. i was over at my Aunt's house and we
+went to my page, she uses Netscape4.0 running on the road runner service, there was a
+javascript problem in the animated Welcome to Mike's page and wedidnt hear the seinfield
+theme. ive found out this page is best viewed with microsoft internet explorer. i'm not
+quite sure on the versions but i know for sure 4.0. please use msie4.0 so you can get to
+experience all of the little frivolous things and hard work that ive put into this
+webpage. Thank you, Mike.</p>
+
+<p align="center"><!--LINE2--> <img SRC="ruler_measured_1.gif" Alt="none" width="586" height="18"> </p>
+
+<p align="center"><img src="intel.gif" width="144" height="125" ALT="i love this picture">
+</p>
+
+<p align="center">&nbsp;<img src="rainbowline.gif" width="600" height="1" ALT="none"><br>
+</p>
+
+<p align="center"><!--FOOT--> If the first email doesn't work for some odd reason use the second one</p>
+
+<p align="center"><a href="mailto:Kozelsky@frontiernet.net"><img src="mail.gif" border="0"
+width="50" height="66" ALT="email me"></a> <a href="mailto:Tcollins10@juno.com"><img
+src="mail3.gif" border="0" width="32" height="32" ALT="email me again"></a></p>
+
+<p align="center">yippee everyone give a big hurrah because you are person number<br>
+<cgi-bin/counter/><br>
+to be here since the beginning of the page!!!</p>
+
+<p align="center"><br>
+Visit my download page <a href="download.html"
+OnMouseOver="window.status='come check out my downloads page';return true"
+target="new_window">here</a> </p>
+
+<p align="center">Visit my links page <a href="link.html"
+OnMouseOver="window.status='make sure you go to my schools computer-lab camera page';return true"
+target="new_window">here</a></p>
+
+<p align="center">Visit my pictures page <a href="picture.html"
+OnMouseOver="window.status='come see my kitty, Belle';return true" target="new_window">here</a></p>
+
+<p align="center">Visit my quotes page <a href="quote.html" target="new_window">here</a></p>
+
+<p align="center"><!--LINE4--> <img src="rule02.gif" width="468" height="22" ALT="none"></p>
+
+<p align="center"><a href="addbook.html">Sign Guestbook</a> <a href="geobook.html">View
+Guest-book</a> </p>
+
+<p align="center">these are some links so link up! </p>
+
+<p align="center"><a HREF="http://www.juno.com/"><img src="getjuno.gif" border="0"
+width="120" height="31" ALT="get juno"></a> <a HREF="http://www.winfiles.com/"><img
+src="anim_link.gif" border="0" width="88" height="31" ALT="visit winfiles.com"></a> <a
+HREF="http://www.microsoft.com/windows/ie/"><img src="ie_animated.gif" border="0"
+width="88" height="31" ALT="download msie4.0"></a> <a HREF="http://www.icq.com/download/"><img
+src="icqdownload1.gif" border="0" width="88" height="31" ALT="download icq"></a> <a
+HREF="http://www.microsoft.com/frontpage/"><img src="frontpag.gif" border="0" width="88"
+height="31" ALT="website created and managed with Microsoft Frontpage 98"></a> <a
+HREF="http://www.winzip.com/"><img
+src="http://www.winfiles.com/gifs/ads/buttonads/winzip.gif" border="0" width="88"
+height="31" ALT="new winzip7.0"><br>
+</p>
+
+<p align="center"></a><img src="shut.gif" width="526" height="17" ALT="none"></p>
+
+<p align="center"><a href="http://www.rochester.rr.com"><img src="cablmodm.jpg" border="0"
+width="252" height="108" ALT="the best thing to happen to rochester"></a></p>
+
+<p align="center"><a href="#top"><img src="top.gif" border="0" width="27" height="23"
+ALT="visit the top!"></a></p>
+
+<!--mstheme--><marquee border="1" width="622" height="22" scrolldelay="70">Page last updated on <!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%m/%d/%y" startspan -->02/02/99<!--webbot bot="Timestamp" endspan i-checksum="13968" --></marquee><!--mstheme-->
+</body>
+</html>
